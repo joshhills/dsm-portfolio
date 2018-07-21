@@ -12,7 +12,10 @@
         <link rel="stylesheet" href="{{ "/assets/styles/main.css?v=" | append: site.github.build_revision | relative_url }}">
     </head>
     <body>
-        <!-- Wrapper content -->
+        <!-- Header-->
+        {% include header.html %}
+
+        <!-- Wrapper Content -->
         {{ content }}
 
         <!-- TODO: Scripts -->
