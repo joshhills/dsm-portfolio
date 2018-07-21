@@ -1,0 +1,34 @@
+# Site configutation
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- Gemfile
+- Gemfile.lock
+- dsm-portfolio-theme.gemspec
+
+# 2. Installed Gems
+plugins
+# - jekyll-jupyter-notebook
+
+# 3. Gem settings
+
+# 4. Jekyll settings
+
+# 5. Collections
+# collections
+#   testimonials
+
+# 6. Jekyll collections settings
+
+# 7. Site settings
+encoding: utf-8
+lang: en-GB
+github_username: joshhills
+email: "josh@jargonify.com" 
