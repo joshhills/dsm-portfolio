@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<!-- Main Index Scroll -->
+<div>
+    <div class="">
+        <h1>
+            {{ site.full_name }}
+        </h1>
+    </div>
+    <div class="">
+        <h2>
+            Contact
+        </h2>
+        <p>
+            Email: 
+            <a href="mailto:{{ site.email_address }}">
+                {{ site.email_address }}
+            </a>
+        </p>
+        <p>
+            Github: 
+            <a href="https://github.com/{{ site.github_username }}">
+                {{ site.github_username }}
+            </a>
+        </p>
+    </div>
+    <div class="">
+        <div class="">
+            <h2>
+                Personal Statement
+            </h2>
+            <p>
+                {% if page.personal_statement %}
+                    {{ page.personal_statement }}
+                {% endif %}
+            </p>
+        </div>
+        <div class="">
+            <h2>
+                Skills
+            </h2>
+        </div>
+    </div>
+</div>

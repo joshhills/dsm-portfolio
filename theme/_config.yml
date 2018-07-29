@@ -6,12 +6,17 @@
 # 5. Collections
 # 6. Jekyll collections settings
 # 7. Site settings
+# 8. User settings
 
 # 1. Files excluded from Jekyll builds
 exclude:
 - Gemfile
 - Gemfile.lock
 - dsm-portfolio-theme.gemspec
+
+# 2. Files included from Jekyll builds
+include:
+- _pages
 
 # 2. Installed Gems
 plugins:
@@ -30,5 +35,15 @@ plugins:
 # 7. Site settings
 encoding: utf-8
 lang: en-GB
+
+# TODO: Optional flag to turn off a post's summary / evaluation from build.
+# TODO: Machine readable versions of the information output. API endpoint?
+# TODO: Optional picture.
+# TODO: Can make 'vignette' iterable (with capture groups).
+# TODO: Competencies per-project (as a config file).
+# TODO: Accomodate external project.
+
+# 8. User settings
+full_name: Josh Hills
+email_address: "josh@jargonify.com" 
 github_username: joshhills
-email: "josh@jargonify.com" 

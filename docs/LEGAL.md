@@ -2,15 +2,16 @@
 
 ## Context
 
-The original portfolio was created by Josh Hills.
+This theme was created by Josh Hills. It was originally built for use by studens of the Data Science Masters of Newcastle University, however it is oganisation-agnostic.
+
+// TODO: Better contact information.
 
 ## Attributions
 
-The site adheres to Newcastle University's [brand guidelines](#).
-
 Plugins used:
 
+- 
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+This theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
