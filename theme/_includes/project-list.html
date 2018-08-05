@@ -4,43 +4,26 @@
         Projects
     </h2>
     <div class="">
-        <!-- Group posts by project -->
-        <!-- {% assign postsByProject = site.posts | group_by_exp: "post", "post.date | date: '%-d/%-m/%Y'" %} -->
-        {% assign postsByProject = site.posts | group_by_exp: "post", "post.id | split: '/' | pop | join: '/'" %}
-        {% for project in postsByProject %}
-            {{ project.name }}
-        {% endfor %}
-<!-- 
+        <!-- Group posts by subdirectory (parent project Id) -->
+        {% assign postsByProject = site.posts | group_by_exp: "post", "post.projectId" %}
         {% for project in postsByProject %}
             <div class="">
                 <p class="">
-                    {{ project.name }}
+                    <!-- Date of submission -->
+                    {{ project.items[0].date | date: "%d-%m-%Y" }}
                 </p>
                 <div class="">
-                    {% for post in project.items %}
-                        Id: {{post.id}}<br>
-                        Slug: {{ post.slug }}<br>
-                        Title: {{post.title}}<br>
-                        Date: {{post.date}}<br>
-                        Path: {{post.path}}<br>
-                        Ext: {{post.ext}}<br>
-                        
-                        {% assign type = post.id | split: '/' | last %}
-                        {% assign fileName = type | append: post.ext %}
-
-                        {% assign typeReverse = type | split: "" | reverse | join: "" %}
-                        {% assign projectIdReverse = post.id | split: "" | reverse | join: "" | remove_first: typeReverse | remove_first: "/" %}
-                        {% assign projectId = projectIdReverse | split: "" | reverse | join: "" %}
-
-                        Type: {{ type }}<br>
-                        File Name: {{ fileName }}<br>
-                        Project Id: {{ projectId }}<br><br>
-                    {% endfor %}
+                    <!-- Project details -->
+                    <h3 class="">
+                        {{ project.items[0].projectTitle }}
+                    </h3>
+                    <div class="">
+                        {% for file in project.items %}
+                            <a class="" href="{{ file.url }}">{{ file.type | capitalize }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
-        {% endfor %} -->
-        <!-- {% for post in site.posts %}
-            {{ post.id }}
-        {% endfor %} -->
+        {% endfor %}
     </div>
 </div>
