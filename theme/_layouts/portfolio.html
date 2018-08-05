@@ -12,34 +12,21 @@ layout: default
         <h2>
             Contact
         </h2>
-        <p>
-            Email: 
-            <a href="mailto:{{ site.email_address }}">
-                {{ site.email_address }}
+        <!-- TODO: Contact information. -->
+        {% for link in site.contact_details %}
+        <li>
+            <a class="a-link" href="{{ link.url }}" target="_self">
+                {{ link.title }}
             </a>
-        </p>
-        <p>
-            Github: 
-            <a href="https://github.com/{{ site.github_username }}">
-                {{ site.github_username }}
-            </a>
-        </p>
+        </li>
+        {% endfor %}
     </div>
     <div class="">
         <div class="">
-            <h2>
-                Personal Statement
-            </h2>
-            <p>
-                {% if page.personal_statement %}
-                    {{ page.personal_statement }}
-                {% endif %}
-            </p>
+            {{ content }}
         </div>
-        <div class="">
-            <h2>
-                Skills
-            </h2>
-        </div>
+    </div>
+    <div class="">
+        {% include project-list.html %}
     </div>
 </div>

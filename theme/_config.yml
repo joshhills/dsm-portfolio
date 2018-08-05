@@ -36,6 +36,8 @@ plugins:
 encoding: utf-8
 lang: en-GB
 
+show_vignettes: true
+
 # TODO: Optional flag to turn off a post's summary / evaluation from build.
 # TODO: Machine readable versions of the information output. API endpoint?
 # TODO: Optional picture.
@@ -45,5 +47,13 @@ lang: en-GB
 
 # 8. User settings
 full_name: Josh Hills
-email_address: "josh@jargonify.com" 
-github_username: joshhills
+contact_details:
+  - type: email 
+    title: Email
+    url: josh@jargonify.com
+  - type: website
+    title: Github
+    url: https://github.com/joshhills
+  - type: website
+    title: LinkedIn
+    url: https://linkedin.com/in/joshuahills
