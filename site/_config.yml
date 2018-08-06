@@ -1,0 +1,6 @@
+theme: dsm-portfolio-theme
+
+notebook_base_path: /assets/notebooks/
+
+include:
+- _pages
