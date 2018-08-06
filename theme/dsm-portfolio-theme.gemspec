@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dsm-portfolio-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Josh Hills"]
   spec.email         = ["josh@jargonify.com"]
 

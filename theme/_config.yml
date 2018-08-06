@@ -37,15 +37,6 @@ encoding: utf-8
 lang: en-GB
 notebook_base_path: /assets/notebooks/
 
-show_vignettes: true
-
-# TODO: Optional flag to turn off a post's summary / evaluation from build.
-# TODO: Machine readable versions of the information output. API endpoint?
-# TODO: Optional picture.
-# TODO: Can make 'vignette' iterable (with capture groups).
-# TODO: Competencies per-project (as a config file).
-# TODO: Accomodate external project.
-
 # 8. User settings
 full_name: Josh Hills
 contact_details:
