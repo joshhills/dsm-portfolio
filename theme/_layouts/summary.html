@@ -54,4 +54,10 @@ layout: default
             </ul>
         </div>
     </div>
+    {% if page.notebook_file %}
+        <div class="">
+            {% assign notebook_path = site.notebook_base_path | append: page.notebook_file %}
+            {% jupyter_notebook notebook_path: notebook_path %}
+        </div>
+    {% endif %}
 </div>

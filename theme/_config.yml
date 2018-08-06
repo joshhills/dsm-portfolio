@@ -20,7 +20,7 @@ include:
 
 # 2. Installed Gems
 plugins:
-# - jekyll-jupyter-notebook
+- jekyll-jupyter-notebook
 
 # 3. Gem settings
 
@@ -35,6 +35,7 @@ plugins:
 # 7. Site settings
 encoding: utf-8
 lang: en-GB
+notebook_base_path: /assets/notebooks/
 
 show_vignettes: true
 

@@ -1,6 +1,7 @@
 ---
 layout: summary
 length: 2 Months
+notebook_file: demo.ipynb
 external_resources:
 - url: https://google.com
   title: Resource One
